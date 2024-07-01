@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Noti noti = new Noti(new SmsService());
+            noti.Notify("Hello");
         }
     }
 }
